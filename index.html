@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Contraseña Valida</h1>
+        <form>
+            <label for="texto">Introduce un texto</label>
+            <input type="text" name="texto" id="texto" onchange="contrasenaValida()">
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h1>Calculadora de impuestos</h1>
+        <form>
+        <label for="texto">Ingresa tu edad: </label>
+        <input type="text" id="edad">
+        <label for="texto">Ingresa tu salario: </label>
+        <input type="text" id="ingresos">
+        <button onclick="calcular1()">Calcular impuestos</button>
+        <p id="resultado"></p>
+    </form>
+    </section>
+    <hr>
+    <section>
+        <h1>IMC</h1>
+        <form>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" name="peso" id="peso" step="0.01" required>
+        <br>
+        <label for="altura">Altura (m):</label>
+        <input type="number" name="altura" id="altura" step="0.01" required>
+        <br>
+        <button onclick="calcular2()">Calcular IMC</button>
+        <p id="resultado"></p>
+    </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
